@@ -47,7 +47,7 @@ module Octopress
         page.data['paginate']['categories'] = Array(category)
       end
 
-      return add_pages(page)
+      add_pages(page)
     end
 
     def add_pages(page)
@@ -97,7 +97,7 @@ module Octopress
 
       page.site.pages.concat new_pages
       
-      return new_pages
+      new_pages
     end
 
     def page_data(page, index)
