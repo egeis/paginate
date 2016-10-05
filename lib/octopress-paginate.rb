@@ -96,6 +96,8 @@ module Octopress
       end
 
       page.site.pages.concat new_pages
+      
+      return new_pages
     end
 
     def page_data(page, index)
